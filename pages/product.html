@@ -4,14 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styleHeader.css">
-  <link rel="stylesheet" href="css/styleMain.css">
-  <title>Home</title>
+  <link rel="stylesheet" href="../css/styleHeader.css">
+  <link rel="stylesheet" href="../css/styleMain.css">
+  <link rel="stylesheet" href="../css/styleProduct.css">
+  <title>Product</title>
 </head>
 
 <body>
   <div class="register_bg">
-    <img src="images/Cancel.png" alt="">
+    <img src="../images/Cancel.png" alt="">
     <div class="page">
       <div class="signup_page">
         <h1>Create Account</h1>
@@ -32,9 +33,9 @@
         </form>
         <!-- <div class="or"></div> -->
         <div class="medias">
-          <img src="images/Facebook.png" alt="">
-          <img src="images/LinkedIn.png" alt="">
-          <img src="images/Google.png" alt="">
+          <img src="../images/Facebook.png" alt="">
+          <img src="../images/LinkedIn.png" alt="">
+          <img src="../images/Google.png" alt="">
         </div>
         <p>Already a user? <strong class="switch-to-login">Log in</strong></p>
   
@@ -55,9 +56,9 @@
         </form>
         <!-- <div class="or"></div> -->
         <div class="medias">
-          <img src="images/Facebook.png" alt="">
-          <img src="images/LinkedIn.png" alt="">
-          <img src="images/Google.png" alt="">
+          <img src="../images/Facebook.png" alt="">
+          <img src="../images/LinkedIn.png" alt="">
+          <img src="../images/Google.png" alt="">
         </div>
         <p>Don't have an account? <strong class="switch-to-signup">Sign Up</strong></p>
   
@@ -67,6 +68,9 @@
     </div>
 
   </div>
+
+  <!-- -------------------------------------------------------------------- -->
+
   <header>
     <nav>
       <div class="logo">
@@ -74,8 +78,8 @@
       </div>
       <div class="right">
         <ul class="tabs">
-          <li class="active"><a href="" >Home</a></li>
-          <li><a href="pages/product.html">Product</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li class="active"><a href="">Product</a></li>
           <li><a href="">Service</a></li>
           <li><a href="">About Us</a></li>
           <li><a href="">Contact Us</a></li>
@@ -88,29 +92,12 @@
       </div>
     </nav>
   </header>
-  <main>
-    <section class="intro">
-      <div class="intro_contents">
-        <div class="introduction">
-          <h1>Welcome to <br>
-            Nexus Auto Spare Parts.</h1>
-          <p>
-            Where Every Turn Leads to Reliability and Precision. <br>Find Your Perfect Fit Today.
-          </p>
-          <button class="shop_now">
-            SHOP NOW
-          </button>
-        </div>
-      </div>
-      <div class="image">
-        <div>
-          <!-- <img src="images/ezgif-2-94d6e7ecd4-removebg-preview.png" alt=""> -->
-        </div>
-      </div>
-    </section>
 
-    <section class="search_section">
-      <div class="catagories">
+  <!-- ----------------------------------------------------------------------- -->
+
+  <main>
+    <section class="search_section product_page" style="margin-top: 5px;">
+      <!-- <div class="catagories">
         <p>All Catagories</p>
         <span></span>
         <ul class="catagory_lists">
@@ -120,55 +107,31 @@
           <li>Parts</li>
           <li>Parts</li>
         </ul>
+      </div> -->
+      <!-- <div class="filter">
+        <button>Filter <img src="../images/Filter.png" alt=""></button>
+      </div> -->
+      <div class="partStatus">
+        <h1>Car Parts</h1>
       </div>
       <div class="search_bar">
         <input type="text" name="" id="" placeholder="Search">
         <button>Search</button>
       </div>
     </section>
-    <section class="discount_section">
-      <div class="slide">
-        <div class="discount_collection">
-          <div class="discounts discount1">
-            <div class="discount_descriptions">
-              <h1>Up to 30% off</h1>
-              <p>Hello</p>
-            </div>
-          </div>
-          <div class="discounts discount2">
-            <div class="discount_descriptions">
-              <h1>Up to 30% off</h1>
-              <p>Hello</p>
-            </div>
-          </div>
-          <div class="discounts discount3">
-            <div class="discount_descriptions">
-              <h1>Up to 30% off</h1>
-              <p>Hello</p>
-            </div>
-          </div>
-          <div class="discounts discount4">
-            <div class="discount_descriptions">
-              <h1>Up to 30% off</h1>
-              <p>Hello</p>
-            </div>
-          </div>
-          <div class="discounts discount5">
-            <div class="discount_descriptions">
-              <h1>Up to 30% off</h1>
-              <p>Hello</p>
-            </div>
-          </div>
-          <div class="discounts discount6">
-            <div class="discount_descriptions">
-              <h1>Up to 30% off</h1>
-              <p>Hello</p>
-            </div>
-          </div>
-        </div>
+    
+    <section class="product_section product_page">
+      <div class="catagory_list ">
+        <ul class="catagory_lists">
+          <li>Parts</li>
+          <li>Parts</li>
+          <li>Parts</li>
+          <li>Parts</li>
+          <li>Parts</li>
+          <li>Parts</li>
+          <li>Parts</li>
+        </ul>
       </div>
-    </section>
-    <section class="product_section">
       <div class="product_home">
         <div class="products">
           <div class="product_content content1">
@@ -255,24 +218,12 @@
           </div>
         </div>
       </div>
-        <div class="pagination">
-          <ul>
-            <li> < </li>
-            <li class="active">1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>></li>
-          </ul>
-        </div>
+      <div class="pagenation">
+          <span></span>
+          
+      </div>
     </section>
   </main>
-
-  <!-- -=============================================- -->
-  <footer>
-
-  </footer>
 </body>
 <script>
   // let tabs = document.querySelector('.tabs');
@@ -293,7 +244,6 @@
   //   })
   // }
 </script>
-<script src="script/scriptHome.js"></script>
-<script src="script/scriptHeader.js"></script>
+<script src="../script/scriptHeader.js"></script>
 
 </html>
