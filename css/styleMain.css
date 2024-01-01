@@ -271,10 +271,11 @@ main *{
   }
   
   & span{
-    right: 5px;
-    width: 10px;
-    height: 10px;
-    background-color: #A00000;
+    right:5px;
+    width: auto;
+    text-align: center;
+    rotate: 90deg;
+    translate: -100% -50%;
   }
 
   & .catagory_lists{
@@ -302,6 +303,25 @@ main *{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+    & >.all-parts.active{
+      display: block;
+    }
+    & >.all-parts{
+      display: none;
+      position: absolute;
+      top: 43px;
+      height: auto;
+      width: 100%;
+      border-radius: 0 0 20px 20px;
+      background-color: #fff;
+      z-index: 2;
+      box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+      & li {
+        padding: 10px;
+        border-bottom: 1px #000 dotted;
+      }
+    }
   & input, input:focus{
     width: 80%;
     padding:5px 10px;
@@ -318,7 +338,7 @@ main *{
 /*----------------------------------------------------*/
 
 .discount_section *{
-  outline: 1px red dotted;
+  /* outline: 1px red dotted; */
 }
 
 .discount_section{
@@ -328,32 +348,83 @@ main *{
   background-color: #fff;
   border-radius: 20px;
   padding: 30px 10%;
+  & >div{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    & >span{
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      font-size: 32px;
+      box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+    }
+
+    & >span:first-child{
+      left: 0;
+      top: 50%;
+      translate: -50% -50%;
+      display: none;
+    }
+
+    & >span:nth-child(2){
+      right: 0;
+      top: 50%;
+      translate: 50% -50%;
+    }
+
+  }
   & .slide{
     width: 100%;
     height: 100%;
     overflow: hidden;
+    
     & .discount_collection{
-      width: 3900px;
+      width: 1950px;
       height: 100%;
       display: flex;
       transform: translateX(-1.33%);
       justify-content: space-evenly;
+      transition: all 1.5s ease;
       & .discounts{
-        width: 15%;
+        width: 30%;
         height: 100%;
-        background-image: url(/images/com_desktop_656x292_273.webp);
+        /* background-image: url(/images/com_desktop_656x292_273.webp); */
         position: relative;
         & .discount_descriptions{
           position: absolute;
           color: #fff;
+          font-weight: 900;
+          -webkit-text-stroke: #000 0.4px;
+          /* color: #fff; */
           bottom: 20px;
           left: 30px;
         }
+       
+        
+      }
+      .discount1{
+        background-image: url(/images/com_desktop_656x292_289.jpg);
+      }
+      .discount2{
+        background-image: url(/images/com_desktop_656x292_279.jpg);
+      }
+      .discount3{
+        background-image: url(/images/shop_safely-dekstop_4.jpg);
       }
     }
   }
 
 }
+
+
 
 /*--------------------------------------------------------------*/
 
@@ -376,10 +447,10 @@ main *{
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: repeat(2, 440px);
   /* gap: 50px; */
   & .products{
-    height: 400px;
+    height: 460px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -403,6 +474,7 @@ main *{
     }
     
     & .product_content{
+      position: relative;
       width: 85%;
       height: 90%;
       padding: 10px;
@@ -420,6 +492,32 @@ main *{
 
       & .product_description h1{
         color: #ff232e;
+      }
+      & .buttons{
+        padding: 10px 20px;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        & a{
+          /* outline: red 1px dotted; */
+          padding: 5px 2%;
+          width: 50%;
+          margin: 0 5px;
+          text-align: center;
+        }
+
+        & a:first-child{
+          background: linear-gradient(90deg, #E77777 0%, #A00000 81.44%);
+          color: #fff;
+        }
+
+        & a:last-child{
+          border: 3px solid #E77777;
+          color: #ff232e;
+        }
       }
     }
 

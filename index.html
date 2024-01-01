@@ -22,11 +22,11 @@
           </div>
           <div class="email">
             <label for="email">E-Mail</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="newEmail">
           </div>
           <div class="password">
             <label for="password">Password</label>
-            <input type="password" name="password" id="password">
+            <input type="password" name="password" id="newPassword">
           </div>
           <input type="submit" value="SIGN UP">
         </form>
@@ -70,13 +70,13 @@
   <header>
     <nav>
       <div class="logo">
-        Nexus
+        
       </div>
       <div class="right">
         <ul class="tabs">
           <li class="active"><a href="" >Home</a></li>
           <li><a href="pages/product.html">Product</a></li>
-          <li><a href="">Service</a></li>
+          <!-- <li><a href="">Service</a></li> -->
           <li><a href="">About Us</a></li>
           <li><a href="">Contact Us</a></li>
         </ul>
@@ -88,6 +88,9 @@
       </div>
     </nav>
   </header>
+
+<!-- **************************************************** -->
+
   <main>
     <section class="intro">
       <div class="intro_contents">
@@ -108,11 +111,13 @@
         </div>
       </div>
     </section>
+    
+<!-- ----------------------------------------------------------------------- -->
 
     <section class="search_section">
       <div class="catagories">
         <p>All Catagories</p>
-        <span></span>
+        <span>></span>
         <ul class="catagory_lists">
           <li>Parts</li>
           <li>Parts</li>
@@ -122,52 +127,71 @@
         </ul>
       </div>
       <div class="search_bar">
-        <input type="text" name="" id="" placeholder="Search">
+        <input type="text" name="" id="" placeholder="Search" class="search">
         <button>Search</button>
+        <ul class="all-parts">
+          <!-- <li>part1</li>
+          <li>part2</li>
+          <li>part3</li>
+          <li>part4</li>
+          <li>part5</li>
+          <li>part6</li>
+          <li>part7</li> -->
+        </ul>
       </div>
     </section>
+    
+<!-- ------------------------------------------------------------------------------- -->
+
     <section class="discount_section">
-      <div class="slide">
-        <div class="discount_collection">
-          <div class="discounts discount1">
-            <div class="discount_descriptions">
-              <h1>Up to 30% off</h1>
-              <p>Hello</p>
+      <div>
+        <span class="dis-prev"><</span>
+        <span class="dis-next">></span>
+        <div class="slide">
+          <div class="discount_collection">
+            <div class="discounts discount1">
+              <div class="discount_descriptions">
+                <h1>Up to 30% off</h1>
+                <p>Windscreen Wipers</p>
+              </div>
             </div>
-          </div>
-          <div class="discounts discount2">
-            <div class="discount_descriptions">
-              <h1>Up to 30% off</h1>
-              <p>Hello</p>
+            <div class="discounts discount2">
+              <div class="discount_descriptions">
+                <h1>Up to 30% off Car Essentials</h1>
+                <p>Brake, Oils & More!</p>
+              </div>
             </div>
-          </div>
-          <div class="discounts discount3">
-            <div class="discount_descriptions">
-              <h1>Up to 30% off</h1>
-              <p>Hello</p>
+            <div class="discounts discount3" >
+              <div class="discount_descriptions">
+                <h1>Shop Safely!</h1>
+                <p>We verify the conformity of the ordered goods upon request.</p>
+              </div>
             </div>
-          </div>
-          <div class="discounts discount4">
-            <div class="discount_descriptions">
-              <h1>Up to 30% off</h1>
-              <p>Hello</p>
+            <!-- <div class="discounts discount4">
+              <div class="discount_descriptions">
+                <h1>Up to 30% off</h1>
+                <p>4Hello</p>
+              </div>
             </div>
-          </div>
-          <div class="discounts discount5">
-            <div class="discount_descriptions">
-              <h1>Up to 30% off</h1>
-              <p>Hello</p>
+            <div class="discounts discount5">
+              <div class="discount_descriptions">
+                <h1>Up to 30% off</h1>
+                <p>5Hello</p>
+              </div>
             </div>
-          </div>
-          <div class="discounts discount6">
-            <div class="discount_descriptions">
-              <h1>Up to 30% off</h1>
-              <p>Hello</p>
-            </div>
+            <div class="discounts discount6">
+              <div class="discount_descriptions">
+                <h1>Up to 30% off</h1>
+                <p>6Hello</p>
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
     </section>
+
+<!-- ------------------------------------------------------------------ -->
+
     <section class="product_section">
       <div class="product_home">
         <div class="products">
@@ -178,10 +202,10 @@
               <h1>TIMING BELT/chain</h1>
               <p>Critical for the engine's valve. Regular replacement is essential to prevent potential damage. </p>
             </div>
-            <!-- <div class="buttons">
+            <div class="buttons">
               <a href="">Add To Cart</a>
               <a href="">Detail</a>
-            </div> -->
+            </div>
           </div>
         </div>
         <div class="products">
@@ -192,10 +216,10 @@
               <h1>SPARK PLUGS</h1>
               <p>Integral for starting the combustion process in the engine often requiring perioic replacement.</p>
             </div>
-            <!-- <div class="buttons">
+            <div class="buttons">
               <a href="">Add To Cart</a>
               <a href="">Detail</a>
-            </div> -->
+            </div>
           </div>
         </div>
         <div class="products">
@@ -206,10 +230,10 @@
               <h1>BRAKE PADS</h1>
               <p>Essential for safe breaking, these wear out over time and need regular replacements.</p>
             </div>
-            <!-- <div class="buttons">
+            <div class="buttons">
               <a href="">Add To Cart</a>
               <a href="">Detail</a>
-            </div> -->
+            </div>
           </div>
         </div>
         <div class="products">
@@ -220,10 +244,10 @@
               <h1>CAR BATTERIES</h1>
               <p>vital for powering electrical systems in vehicles, they often require replacement after a few  .</p>
             </div>
-            <!-- <div class="buttons">
+            <div class="buttons">
               <a href="">Add To Cart</a>
               <a href="">Detail</a>
-            </div> -->
+            </div>
           </div>
         </div>
         <div class="products">
@@ -234,10 +258,10 @@
               <h1>OIL FILTERS</h1>
               <p>Necessary for keeping the engine oil clean, ensuring proper lubrication for the engine's moving parts.</p>
             </div>
-            <!-- <div class="buttons">
+            <div class="buttons">
               <a href="">Add To Cart</a>
               <a href="">Detail</a>
-            </div> -->
+            </div>
           </div>
         </div>
         <div class="products">
@@ -248,10 +272,10 @@
               <h1>AIR FILTERS</h1>
               <p>Crucial for maintaining engine health by filtering out dust and debris from entering the engine</p>
             </div>
-            <!-- <div class="buttons">
+            <div class="buttons">
               <a href="">Add To Cart</a>
               <a href="">Detail</a>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
@@ -271,7 +295,44 @@
 
   <!-- -=============================================- -->
   <footer>
-
+    <div class="footer">
+      <div class="footerInfo">
+        <h3>Information</h3>
+        <ul class="infos">
+          <li><a href="">Contact</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Delivery</a></li>
+          <li><a href="">Checkout</a></li>
+          <li><a href="">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footerCat">
+        <h3>Catagories</h3>
+        <ul class="infos">
+          <li><a href="">Car Parts</a></li>
+          <li><a href="">Oils and Fluids</a></li>
+          <li><a href="">Accessories and Equipments</a></li>
+          <li><a href="">Tools</a></li>
+          <li><a href="">Car Detailing</a></li>
+        </ul>
+      </div>
+      <div class="footerAbout">
+        <h3>About Us</h3>
+        <div class="infos">
+          <p>Passionate about cars. </p>
+          <p>Committed quality.</p>
+          <p>Your trusted source for premium auto parts.</p>
+        </div>
+      </div>
+      <div class="footerContact">
+        <h3>Contacts</h3>
+        <div class="infos">
+          <p>Locate in Addis Ababa, <br>Ethiopia we are here to assist you. </p>
+          <p>Reach out to us to <strong>Nexusmotive@gmail.com.</strong></p>
+          <p>For all your needs!!</p>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
 <script>
@@ -293,7 +354,7 @@
   //   })
   // }
 </script>
-<script src="script/scriptHome.js"></script>
 <script src="script/scriptHeader.js"></script>
+<script src="script/scriptHome.js"></script>
 
 </html>

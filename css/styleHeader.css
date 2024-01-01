@@ -9,12 +9,23 @@
   font-family: 'Lato', sans-serif;
   font-weight: 500;
   list-style: none;
-  /* outline: 1px dotted red; */
+  /* --outline: 1px dotted red; */
 }
 body{
   background-color: #d9d9d9;
   position: relative;
 }
+
+::-webkit-scrollbar{
+  background-color: #d9d9d9;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #fa2a34;
+  border-radius: 20px;
+}
+
 button{
   border: none;
 }
@@ -26,6 +37,10 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+strong{
+  font-weight: bold;
 }
 
 
@@ -46,6 +61,13 @@ a{
 *input:focus-visible{
   border: none;
   background-color: green;
+}
+
+.logo{
+  background-image: url(/images/Logo.png);
+  background-size: contain;
+  /* outline: var(--outline); */
+  width: 100px;
 }
 
 .right{
@@ -83,6 +105,7 @@ a{
   transform: scale(1.2);
 }
 
+/* ================================================ */
 
 .account{
   width: 20%;
@@ -123,3 +146,37 @@ a{
 }
 
 /* ---------------------------------------------------------- */
+
+footer *{
+  /* outline: var(--outline); */
+}
+
+footer{
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px 5%;
+  & .footer{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    & .footer>div{
+      height: 100%;
+      & h3{
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+   & .infos{
+    padding-top: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+}
+
