@@ -1,360 +1,755 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styleHeader.css" />
+    <link rel="stylesheet" href="css/styleMain.css" />
+    <title>Home</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styleHeader.css">
-  <link rel="stylesheet" href="css/styleMain.css">
-  <title>Home</title>
-</head>
-
-<body>
-  <div class="register_bg">
-    <img src="images/Cancel.png" alt="">
-    <div class="page">
-      <div class="signup_page">
-        <h1>Create Account</h1>
-        <form action="">
-          <div class="name">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name">
+  <body>
+    <div class="register_bg">
+      <img src="images/Cancel.png" alt="" />
+      <div class="page">
+        <div class="signup_page">
+          <h1>Create Account</h1>
+          <form action="">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                name="email"
+                id="newEmail"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="newPassword"
+                placeholder="Create a strong password"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input type="submit" value="CREATE ACCOUNT" />
+            </div>
+          </form>
+          <div class="medias">
+            <img src="images/Facebook.png" alt="Sign up with Facebook" />
+            <img src="images/LinkedIn.png" alt="Sign up with LinkedIn" />
+            <img src="images/Google.png" alt="Sign up with Google" />
           </div>
-          <div class="email">
-            <label for="email">E-Mail</label>
-            <input type="email" name="email" id="newEmail">
-          </div>
-          <div class="password">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="newPassword">
-          </div>
-          <input type="submit" value="SIGN UP">
-        </form>
-        <!-- <div class="or"></div> -->
-        <div class="medias">
-          <img src="images/Facebook.png" alt="">
-          <img src="images/LinkedIn.png" alt="">
-          <img src="images/Google.png" alt="">
-        </div>
-        <p>Already a user? <strong class="switch-to-login">Log in</strong></p>
-  
-      </div>
-
-      <div class="login_page">
-        <h1>Sign In</h1>
-        <form action="">
-          <div class="email">
-            <label for="email">User Name</label>
-            <input type="email" name="email" id="email">
-          </div>
-          <div class="password">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-          </div>
-          <input type="submit" value="LOG IN">
-        </form>
-        <!-- <div class="or"></div> -->
-        <div class="medias">
-          <img src="images/Facebook.png" alt="">
-          <img src="images/LinkedIn.png" alt="">
-          <img src="images/Google.png" alt="">
-        </div>
-        <p>Don't have an account? <strong class="switch-to-signup">Sign Up</strong></p>
-  
-      </div>
-      
-
-    </div>
-
-  </div>
-  <header>
-    <nav>
-      <div class="logo">
-        
-      </div>
-      <div class="right">
-        <ul class="tabs">
-          <li class="active"><a href="" >Home</a></li>
-          <li><a href="pages/product.html">Product</a></li>
-          <!-- <li><a href="">Service</a></li> -->
-          <li><a href="">About Us</a></li>
-          <li><a href="">Contact Us</a></li>
-        </ul>
-        <div class="account">
-          <button class="login">LOG-IN</button>
-          <button class="signup">SIGN-UP</button>
-        </div>
-
-      </div>
-    </nav>
-  </header>
-
-<!-- **************************************************** -->
-
-  <main>
-    <section class="intro">
-      <div class="intro_contents">
-        <div class="introduction">
-          <h1>Welcome to <br>
-            Nexus Auto Spare Parts.</h1>
-          <p>
-            Where Every Turn Leads to Reliability and Precision. <br>Find Your Perfect Fit Today.
+          <p class="switch-text">
+            Already have an account?
+            <strong class="switch-to-login">Sign In</strong>
           </p>
-          <button class="shop_now">
-            SHOP NOW
+        </div>
+
+        <div class="login_page">
+          <h1>Welcome Back</h1>
+          <form action="">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input type="submit" value="SIGN IN" />
+            </div>
+          </form>
+          <div class="medias">
+            <img src="images/Facebook.png" alt="Sign in with Facebook" />
+            <img src="images/LinkedIn.png" alt="Sign in with LinkedIn" />
+            <img src="images/Google.png" alt="Sign in with Google" />
+          </div>
+          <p class="switch-text">
+            Don't have an account?
+            <strong class="switch-to-signup">Create Account</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+    <header>
+      <nav>
+        <div class="logo"></div>
+        <div class="right">
+          <ul class="tabs">
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="#product-section">Product</a></li>
+            <!-- <li><a href="">Service</a></li> -->
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/contact.html">Contact Us</a></li>
+          </ul>
+          <div class="account">
+            <button class="login">LOG-IN</button>
+            <button class="signup">SIGN-UP</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- **************************************************** -->
+
+    <main>
+      <section class="intro" id="home">
+        <div class="intro_contents">
+          <div class="introduction">
+            <h1>
+              Welcome to <br />
+              Nexus Auto Spare Parts.
+            </h1>
+            <p>
+              Where Every Turn Leads to Reliability and Precision. <br />Find
+              Your Perfect Fit Today.
+            </p>
+            <button class="shop_now">SHOP NOW</button>
+          </div>
+          <div class="hero_image">
+            <div class="image_container">
+              <img
+                src="images/ezgif-2-94d6e7ecd4-removebg-preview.png"
+                alt="Auto Parts Collection"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----------------------------------------------------------------------- -->
+
+      <section class="search_section" id="search">
+        <div class="search_container">
+          <div class="category_dropdown">
+            <button class="category_trigger">
+              <span class="category_text">All Categories</span>
+              <svg
+                class="dropdown_icon"
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6,9 12,15 18,9"></polyline>
+              </svg>
+            </button>
+            <ul class="category_list">
+              <li class="category_item">
+                <span class="category_name">Engine Parts</span>
+                <span class="category_count">(245)</span>
+              </li>
+              <li class="category_item">
+                <span class="category_name">Brake System</span>
+                <span class="category_count">(189)</span>
+              </li>
+              <li class="category_item">
+                <span class="category_name">Suspension</span>
+                <span class="category_count">(156)</span>
+              </li>
+              <li class="category_item">
+                <span class="category_name">Electrical</span>
+                <span class="category_count">(203)</span>
+              </li>
+              <li class="category_item">
+                <span class="category_name">Body Parts</span>
+                <span class="category_count">(178)</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="search_input_group">
+            <div class="search_input_wrapper">
+              <svg
+                class="search_icon"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+              <input
+                type="text"
+                placeholder="Search for parts, brands, or models..."
+                class="search_input"
+              />
+            </div>
+            <button class="search_button">
+              <span>Search</span>
+              <svg
+                class="search_arrow"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12,5 19,12 12,19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="search_suggestions">
+          <div class="suggestions_header">
+            <span class="suggestions_title">Popular Searches</span>
+          </div>
+          <div class="suggestions_tags">
+            <span class="suggestion_tag">Brake Pads</span>
+            <span class="suggestion_tag">Oil Filter</span>
+            <span class="suggestion_tag">Air Filter</span>
+            <span class="suggestion_tag">Spark Plugs</span>
+            <span class="suggestion_tag">Battery</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------------------- -->
+
+      <section class="discount_section" id="offers">
+        <div class="discount_header">
+          <h2 class="discount_title">Special Offers</h2>
+          <p class="discount_subtitle">
+            Discover amazing deals on quality auto parts
+          </p>
+        </div>
+
+        <div class="discount_container">
+          <button
+            class="discount_nav discount_prev"
+            aria-label="Previous offer"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="15,18 9,12 15,6"></polyline>
+            </svg>
+          </button>
+
+          <div class="discount_slider">
+            <div class="discount_track">
+              <div class="discount_card">
+                <div class="discount_image">
+                  <div class="discount_overlay"></div>
+                  <div class="discount_badge">
+                    <span class="badge_text">30% OFF</span>
+                  </div>
+                </div>
+                <div class="discount_content">
+                  <h3 class="discount_heading">Windscreen Wipers</h3>
+                  <p class="discount_description">
+                    Premium quality wipers for crystal clear visibility
+                  </p>
+                  <button class="discount_cta">Shop Now</button>
+                </div>
+              </div>
+
+              <div class="discount_card">
+                <div class="discount_image">
+                  <div class="discount_overlay"></div>
+                  <div class="discount_badge">
+                    <span class="badge_text">30% OFF</span>
+                  </div>
+                </div>
+                <div class="discount_content">
+                  <h3 class="discount_heading">Car Essentials</h3>
+                  <p class="discount_description">
+                    Brake, Oils & More! Everything your car needs
+                  </p>
+                  <button class="discount_cta">Shop Now</button>
+                </div>
+              </div>
+
+              <div class="discount_card">
+                <div class="discount_image">
+                  <div class="discount_overlay"></div>
+                  <div class="discount_badge">
+                    <span class="badge_text">SAFE</span>
+                  </div>
+                </div>
+                <div class="discount_content">
+                  <h3 class="discount_heading">Shop Safely!</h3>
+                  <p class="discount_description">
+                    We verify the conformity of all ordered goods
+                  </p>
+                  <button class="discount_cta">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="discount_nav discount_next" aria-label="Next offer">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="9,18 15,12 9,6"></polyline>
+            </svg>
           </button>
         </div>
-      </div>
-      <div class="image">
-        <div>
-          <!-- <img src="images/ezgif-2-94d6e7ecd4-removebg-preview.png" alt=""> -->
-        </div>
-      </div>
-    </section>
-    
-<!-- ----------------------------------------------------------------------- -->
 
-    <section class="search_section">
-      <div class="catagories">
-        <p>All Catagories</p>
-        <span>></span>
-        <ul class="catagory_lists">
-          <li>Parts</li>
-          <li>Parts</li>
-          <li>Parts</li>
-          <li>Parts</li>
-          <li>Parts</li>
-        </ul>
-      </div>
-      <div class="search_bar">
-        <input type="text" name="" id="" placeholder="Search" class="search">
-        <button>Search</button>
-        <ul class="all-parts">
-          <!-- <li>part1</li>
-          <li>part2</li>
-          <li>part3</li>
-          <li>part4</li>
-          <li>part5</li>
-          <li>part6</li>
-          <li>part7</li> -->
-        </ul>
-      </div>
-    </section>
-    
-<!-- ------------------------------------------------------------------------------- -->
+        <div class="discount_indicators">
+          <button class="indicator active" aria-label="Go to slide 1"></button>
+          <button class="indicator" aria-label="Go to slide 2"></button>
+          <button class="indicator" aria-label="Go to slide 3"></button>
+        </div>
+      </section>
 
-    <section class="discount_section">
-      <div>
-        <span class="dis-prev"><</span>
-        <span class="dis-next">></span>
-        <div class="slide">
-          <div class="discount_collection">
-            <div class="discounts discount1">
-              <div class="discount_descriptions">
-                <h1>Up to 30% off</h1>
-                <p>Windscreen Wipers</p>
-              </div>
-            </div>
-            <div class="discounts discount2">
-              <div class="discount_descriptions">
-                <h1>Up to 30% off Car Essentials</h1>
-                <p>Brake, Oils & More!</p>
-              </div>
-            </div>
-            <div class="discounts discount3" >
-              <div class="discount_descriptions">
-                <h1>Shop Safely!</h1>
-                <p>We verify the conformity of the ordered goods upon request.</p>
-              </div>
-            </div>
-            <!-- <div class="discounts discount4">
-              <div class="discount_descriptions">
-                <h1>Up to 30% off</h1>
-                <p>4Hello</p>
-              </div>
-            </div>
-            <div class="discounts discount5">
-              <div class="discount_descriptions">
-                <h1>Up to 30% off</h1>
-                <p>5Hello</p>
-              </div>
-            </div>
-            <div class="discounts discount6">
-              <div class="discount_descriptions">
-                <h1>Up to 30% off</h1>
-                <p>6Hello</p>
-              </div>
-            </div> -->
-          </div>
-        </div>
-      </div>
-    </section>
+      <!-- ------------------------------------------------------------------ -->
 
-<!-- ------------------------------------------------------------------ -->
+      <section class="product_section" id="product-section">
+        <div class="product_home">
+          <!-- Page 1 -->
+          <div class="products">
+            <div class="product_content content1">
+              <div class="product_badge">Best Seller</div>
+              <div class="product_img"></div>
+              <div class="product_description">
+                <h5>215</h5>
+                <h1>Timing Belt/Chain</h1>
+                <p>
+                  Critical for the engine's valve. Regular replacement is
+                  essential to prevent potential damage.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="">Add To Cart</a>
+                <a href="">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="products">
+            <div class="product_content content2">
+              <div class="product_badge">Popular</div>
+              <div class="product_img"></div>
+              <div class="product_description">
+                <h5>5</h5>
+                <h1>Spark Plugs</h1>
+                <p>
+                  Integral for starting the combustion process in the engine
+                  often requiring periodic replacement.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="">Add To Cart</a>
+                <a href="">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="products">
+            <div class="product_content content3">
+              <div class="product_badge">Top Rated</div>
+              <div class="product_img"></div>
+              <div class="product_description">
+                <h5>215</h5>
+                <h1>Brake Pads</h1>
+                <p>
+                  Essential for safe braking, these wear out over time and need
+                  regular replacements.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="">Add To Cart</a>
+                <a href="">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="products">
+            <div class="product_content content4">
+              <div class="product_badge">New</div>
+              <div class="product_img"></div>
+              <div class="product_description">
+                <h5>240</h5>
+                <h1>Car Batteries</h1>
+                <p>
+                  Vital for powering electrical systems in vehicles, they often
+                  require replacement after a few years.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="">Add To Cart</a>
+                <a href="">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="products">
+            <div class="product_content content5">
+              <div class="product_badge">Essential</div>
+              <div class="product_img"></div>
+              <div class="product_description">
+                <h5>44</h5>
+                <h1>Oil Filters</h1>
+                <p>
+                  Necessary for keeping the engine oil clean, ensuring proper
+                  lubrication for the engine's moving parts.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="">Add To Cart</a>
+                <a href="">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="products">
+            <div class="product_content content6">
+              <div class="product_badge">Quality</div>
+              <div class="product_img"></div>
+              <div class="product_description">
+                <h5>35</h5>
+                <h1>Air Filters</h1>
+                <p>
+                  Crucial for maintaining engine health by filtering out dust
+                  and debris from entering the engine.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="">Add To Cart</a>
+                <a href="">Detail</a>
+              </div>
+            </div>
+          </div>
 
-    <section class="product_section">
-      <div class="product_home">
-        <div class="products">
-          <div class="product_content content1">
-            <div class="product_img"></div>
-            <div class="product_description">
-              <h5>$ 215</h5>
-              <h1>TIMING BELT/chain</h1>
-              <p>Critical for the engine's valve. Regular replacement is essential to prevent potential damage. </p>
+          <!-- Page 2 -->
+          <div class="products page-2" style="display: none">
+            <div class="product_content content7">
+              <div class="product_badge">Premium</div>
+              <div class="product_img"></div>
+              <div class="product_description">
+                <h5>180</h5>
+                <h1>Fuel Pump</h1>
+                <p>
+                  High-performance fuel delivery system ensuring optimal engine
+                  performance and fuel efficiency.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="">Add To Cart</a>
+                <a href="">Detail</a>
+              </div>
             </div>
-            <div class="buttons">
-              <a href="">Add To Cart</a>
-              <a href="">Detail</a>
+          </div>
+          <div class="products page-2" style="display: none">
+            <div class="product_content content8">
+              <div class="product_badge">Hot Deal</div>
+              <div class="product_img"></div>
+              <div class="product_description">
+                <h5>95</h5>
+                <h1>Water Pump</h1>
+                <p>
+                  Essential cooling system component that circulates coolant
+                  throughout the engine to prevent overheating.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="">Add To Cart</a>
+                <a href="">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="products page-2" style="display: none">
+            <div class="product_content content9">
+              <div class="product_badge">Featured</div>
+              <div class="product_img"></div>
+              <div class="product_description">
+                <h5>320</h5>
+                <h1>Alternator</h1>
+                <p>
+                  Charges the battery and powers electrical systems while the
+                  engine is running.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="">Add To Cart</a>
+                <a href="">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="products page-2" style="display: none">
+            <div class="product_content content10">
+              <div class="product_badge">Limited</div>
+              <div class="product_img"></div>
+              <div class="product_description">
+                <h5>75</h5>
+                <h1>Radiator</h1>
+                <p>
+                  Heat exchanger that cools the engine coolant to maintain
+                  optimal operating temperature.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="">Add To Cart</a>
+                <a href="">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="products page-2" style="display: none">
+            <div class="product_content content11">
+              <div class="product_badge">Trusted</div>
+              <div class="product_img"></div>
+              <div class="product_description">
+                <h5>125</h5>
+                <h1>Starter Motor</h1>
+                <p>
+                  Electric motor that cranks the engine to start the combustion
+                  process.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="">Add To Cart</a>
+                <a href="">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="products page-2" style="display: none">
+            <div class="product_content content12">
+              <div class="product_badge">Reliable</div>
+              <div class="product_img"></div>
+              <div class="product_description">
+                <h5>85</h5>
+                <h1>Clutch Kit</h1>
+                <p>
+                  Complete clutch assembly for smooth gear shifting and power
+                  transmission.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="">Add To Cart</a>
+                <a href="">Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page 3 -->
+          <div class="products page-3" style="display: none">
+            <div class="product_content content13">
+              <div class="product_badge">Exclusive</div>
+              <div class="product_img"></div>
+              <div class="product_description">
+                <h5>450</h5>
+                <h1>Turbocharger</h1>
+                <p>
+                  Forced induction system that increases engine power and
+                  efficiency through compressed air intake.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="">Add To Cart</a>
+                <a href="">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="products page-3" style="display: none">
+            <div class="product_content content14">
+              <div class="product_badge">Performance</div>
+              <div class="product_img"></div>
+              <div class="product_description">
+                <h5>280</h5>
+                <h1>Exhaust System</h1>
+                <p>
+                  Complete exhaust system for optimal engine performance and
+                  reduced emissions.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="">Add To Cart</a>
+                <a href="">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="products page-3" style="display: none">
+            <div class="product_content content15">
+              <div class="product_badge">Premium</div>
+              <div class="product_img"></div>
+              <div class="product_description">
+                <h5>165</h5>
+                <h1>Shock Absorbers</h1>
+                <p>
+                  Damping system components that provide smooth ride quality and
+                  vehicle stability.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="">Add To Cart</a>
+                <a href="">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="products page-3" style="display: none">
+            <div class="product_content content16">
+              <div class="product_badge">Quality</div>
+              <div class="product_img"></div>
+              <div class="product_description">
+                <h5>95</h5>
+                <h1>CV Joints</h1>
+                <p>
+                  Constant velocity joints for smooth power transmission to the
+                  wheels at various angles.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="">Add To Cart</a>
+                <a href="">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="products page-3" style="display: none">
+            <div class="product_content content17">
+              <div class="product_badge">Essential</div>
+              <div class="product_img"></div>
+              <div class="product_description">
+                <h5>120</h5>
+                <h1>Ball Joints</h1>
+                <p>
+                  Suspension components that allow for steering and wheel
+                  movement while maintaining stability.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="">Add To Cart</a>
+                <a href="">Detail</a>
+              </div>
+            </div>
+          </div>
+          <div class="products page-3" style="display: none">
+            <div class="product_content content18">
+              <div class="product_badge">Reliable</div>
+              <div class="product_img"></div>
+              <div class="product_description">
+                <h5>75</h5>
+                <h1>Wheel Bearings</h1>
+                <p>
+                  Precision bearings that allow wheels to rotate smoothly with
+                  minimal friction.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="">Add To Cart</a>
+                <a href="">Detail</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="products">
-          <div class="product_content content2">
-            <div class="product_img"></div>
-            <div class="product_description">
-              <h5>$ 5</h5>
-              <h1>SPARK PLUGS</h1>
-              <p>Integral for starting the combustion process in the engine often requiring perioic replacement.</p>
-            </div>
-            <div class="buttons">
-              <a href="">Add To Cart</a>
-              <a href="">Detail</a>
-            </div>
-          </div>
-        </div>
-        <div class="products">
-          <div class="product_content content3">
-            <div class="product_img"></div>
-            <div class="product_description">
-              <h5>$ 215</h5>
-              <h1>BRAKE PADS</h1>
-              <p>Essential for safe breaking, these wear out over time and need regular replacements.</p>
-            </div>
-            <div class="buttons">
-              <a href="">Add To Cart</a>
-              <a href="">Detail</a>
-            </div>
-          </div>
-        </div>
-        <div class="products">
-          <div class="product_content content4">
-            <div class="product_img"></div>
-            <div class="product_description">
-              <h5>$ 240</h5>
-              <h1>CAR BATTERIES</h1>
-              <p>vital for powering electrical systems in vehicles, they often require replacement after a few  .</p>
-            </div>
-            <div class="buttons">
-              <a href="">Add To Cart</a>
-              <a href="">Detail</a>
-            </div>
-          </div>
-        </div>
-        <div class="products">
-          <div class="product_content content5">
-            <div class="product_img"></div>
-            <div class="product_description">
-              <h5>$ 44</h5>
-              <h1>OIL FILTERS</h1>
-              <p>Necessary for keeping the engine oil clean, ensuring proper lubrication for the engine's moving parts.</p>
-            </div>
-            <div class="buttons">
-              <a href="">Add To Cart</a>
-              <a href="">Detail</a>
-            </div>
-          </div>
-        </div>
-        <div class="products">
-          <div class="product_content content6">
-            <div class="product_img"></div>
-            <div class="product_description">
-              <h5>$ 35</h5>
-              <h1>AIR FILTERS</h1>
-              <p>Crucial for maintaining engine health by filtering out dust and debris from entering the engine</p>
-            </div>
-            <div class="buttons">
-              <a href="">Add To Cart</a>
-              <a href="">Detail</a>
-            </div>
-          </div>
-        </div>
-      </div>
+
         <div class="pagination">
           <ul>
-            <li> < </li>
-            <li class="active">1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>></li>
+            <li class="prev-btn"><</li>
+            <li class="page-btn active" data-page="1">1</li>
+            <li class="page-btn" data-page="2">2</li>
+            <li class="page-btn" data-page="3">3</li>
+            <li class="next-btn">></li>
           </ul>
         </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <!-- -=============================================- -->
-  <footer>
-    <div class="footer">
-      <div class="footerInfo">
-        <h3>Information</h3>
-        <ul class="infos">
-          <li><a href="">Contact</a></li>
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Delivery</a></li>
-          <li><a href="">Checkout</a></li>
-          <li><a href="">About Us</a></li>
-        </ul>
-      </div>
-      <div class="footerCat">
-        <h3>Catagories</h3>
-        <ul class="infos">
-          <li><a href="">Car Parts</a></li>
-          <li><a href="">Oils and Fluids</a></li>
-          <li><a href="">Accessories and Equipments</a></li>
-          <li><a href="">Tools</a></li>
-          <li><a href="">Car Detailing</a></li>
-        </ul>
-      </div>
-      <div class="footerAbout">
-        <h3>About Us</h3>
-        <div class="infos">
-          <p>Passionate about cars. </p>
-          <p>Committed quality.</p>
-          <p>Your trusted source for premium auto parts.</p>
+    <!-- -=============================================- -->
+    <footer>
+      <div class="footer">
+        <div class="footerInfo">
+          <h3>Information</h3>
+          <ul class="infos">
+            <li><a href="">Contact</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Delivery</a></li>
+            <li><a href="">Checkout</a></li>
+            <li><a href="">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footerCat">
+          <h3>Catagories</h3>
+          <ul class="infos">
+            <li><a href="">Car Parts</a></li>
+            <li><a href="">Oils and Fluids</a></li>
+            <li><a href="">Accessories and Equipments</a></li>
+            <li><a href="">Tools</a></li>
+            <li><a href="">Car Detailing</a></li>
+          </ul>
+        </div>
+        <div class="footerAbout">
+          <h3>About Us</h3>
+          <div class="infos">
+            <p>Passionate about cars.</p>
+            <p>Committed quality.</p>
+            <p>Your trusted source for premium auto parts.</p>
+          </div>
+        </div>
+        <div class="footerContact">
+          <h3>Contacts</h3>
+          <div class="infos">
+            <p>
+              Locate in Addis Ababa, <br />Ethiopia we are here to assist you.
+            </p>
+            <p>Reach out to us to <strong>Nexusmotive@gmail.com.</strong></p>
+            <p>For all your needs!!</p>
+          </div>
         </div>
       </div>
-      <div class="footerContact">
-        <h3>Contacts</h3>
-        <div class="infos">
-          <p>Locate in Addis Ababa, <br>Ethiopia we are here to assist you. </p>
-          <p>Reach out to us to <strong>Nexusmotive@gmail.com.</strong></p>
-          <p>For all your needs!!</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-</body>
-<script>
-  // let tabs = document.querySelector('.tabs');
-  // let links = tabs.querySelectorAll('li');
+    </footer>
+  </body>
+  <script>
+    // let tabs = document.querySelector('.tabs');
+    // let links = tabs.querySelectorAll('li');
 
-  // console.log(links)
+    // console.log(links)
 
-  // links.forEach(link=>{
-  //   link.addEventListener('click', ()=>{
-  //     removeActiveClasses();
-  //     link.classList.add('active');
-  //   })
-  // })
+    // links.forEach(link=>{
+    //   link.addEventListener('click', ()=>{
+    //     removeActiveClasses();
+    //     link.classList.add('active');
+    //   })
+    // })
 
-  // function removeActiveClasses() {
-  //   links.forEach(link => {
-  //       link.classList.remove('active')
-  //   })
-  // }
-</script>
-<script src="script/scriptHeader.js"></script>
-<script src="script/scriptHome.js"></script>
-
+    // function removeActiveClasses() {
+    //   links.forEach(link => {
+    //       link.classList.remove('active')
+    //   })
+    // }
+  </script>
+  <script src="script/scriptHeader.js"></script>
+  <script src="script/scriptHome.js"></script>
 </html>
